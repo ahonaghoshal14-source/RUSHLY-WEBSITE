@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RUSHLY</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f2027,#6a11cb,#ff4ecd);
+color:white;
+}
+
+/* NAVBAR */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+}
+
+.logo{
+font-weight:800;
+font-size:22px;
+}
+
+nav a{
+margin:0 15px;
+color:white;
+text-decoration:none;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.cta{
+background:linear-gradient(45deg,#ff4ecd,#ff7bff);
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+/* HERO (LEFT ALIGN FIXED) */
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin:10px 0;
+}
+
+.hero-text span{
+color:#ff7bff;
+}
+
+.hero-text p{
+opacity:0.8;
+}
+
+/* SERVICES */
+.services{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:50px 20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:15px;
+width:250px;
+text-align:center;
+backdrop-filter:blur(10px);
+}
+
+.card button{
+margin-top:10px;
+padding:10px 15px;
+border:none;
+border-radius:20px;
+background:#ff4ecd;
+color:white;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">RUSHLY</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="about.html">About</a>
+</nav>
+
+<!-- WhatsApp direct -->
+<a href="https://wa.me/918100112502" class="cta">ORDER NOW →</a>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h4>Stress Less</h4>
+<h1>SUBMIT THE BEST<span>.</span></h1>
+
+<p>
+High-quality school projects, practical files, scrapbooks & charts – made just for you!
+</p>
+</div>
+
+<div class="hero-img">
+<!-- you can add image later -->
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+
+<div class="card">
+<h3>School Projects</h3>
+<p>Well-designed and perfect as per school requirements</p>
+<button onclick="location.href='project.html'">Order</button>
+</div>
+
+<div class="card">
+<h3>Practical Files</h3>
+<p>Neat and structured practical work</p>
+<button onclick="location.href='practical.html'">Order</button>
+</div>
+
+<div class="card">
+<h3>Scrapbooks & Charts</h3>
+<p>Creative and colorful presentation work</p>
+<button onclick="location.href='scrapbook.html'">Order</button>
+</div>
+
+</section>
+
+</body>
+</html>

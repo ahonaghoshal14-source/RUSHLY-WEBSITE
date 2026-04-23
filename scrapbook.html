@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrapbook</title>
+
+<style>
+body{
+background:#111;
+color:white;
+font-family:Poppins;
+text-align:center;
+padding:30px;
+}
+
+input,select{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:12px;
+width:90%;
+background:#ff4ecd;
+border:none;
+color:white;
+border-radius:25px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Scrapbook / Chart</h2>
+
+<select id="type">
+<option>Scrapbook</option>
+<option>Chart</option>
+</select>
+
+<input id="topic" placeholder="Topic / Colour">
+<input id="desc" placeholder="Details">
+
+<button onclick="order()">Send</button>
+
+<script src="engine.js"></script>
+
+<script>
+function order(){
+sendOrder("Scrapbook",{
+type:type.value,
+topic:topic.value,
+details:desc.value
+});
+}
+</script>
+
+</body>
+</html>
