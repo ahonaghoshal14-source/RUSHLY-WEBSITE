@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Order</title>
+
+<style>
+body{
+background:#111;
+color:white;
+font-family:Poppins;
+text-align:center;
+padding:30px;
+}
+
+input,textarea,select{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:none;
+}
+
+button{
+padding:12px;
+width:90%;
+border:none;
+background:#ff4ecd;
+color:white;
+border-radius:25px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>School Project</h2>
+
+<input id="topic" placeholder="Topic">
+<textarea id="desc" placeholder="Description"></textarea>
+
+<select id="type">
+<option>Copy</option>
+<option>File</option>
+</select>
+
+<input id="pages" placeholder="Pages">
+<input id="cover" placeholder="Cover">
+
+<button onclick="order()">Send Order</button>
+
+<script src="engine.js"></script>
+
+<script>
+function order(){
+sendOrder("Project",{
+topic:topic.value,
+description:desc.value,
+type:type.value,
+pages:pages.value,
+cover:cover.value
+});
+}
+</script>
+
+</body>
+</html>

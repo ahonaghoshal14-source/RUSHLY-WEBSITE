@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practical</title>
+
+<style>
+body{
+background:#111;
+color:white;
+font-family:Poppins;
+text-align:center;
+padding:30px;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:10px;
+}
+
+button{
+padding:12px;
+width:90%;
+background:#ff4ecd;
+color:white;
+border:none;
+border-radius:25px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Practical File</h2>
+
+<input id="subject" placeholder="Subject">
+<input id="topic" placeholder="Topic">
+<input id="cover" placeholder="Cover">
+
+<button onclick="order()">Send</button>
+
+<script src="engine.js"></script>
+
+<script>
+function order(){
+sendOrder("Practical",{
+subject:subject.value,
+topic:topic.value,
+cover:cover.value
+});
+}
+</script>
+
+</body>
+</html>

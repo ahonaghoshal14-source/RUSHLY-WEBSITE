@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RUSHLY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+margin:0;
+font-family:Poppins;
+background:linear-gradient(135deg,#0f2027,#6a11cb,#ff4ecd);
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.btn{
+padding:12px 20px;
+background:#ff4ecd;
+border:none;
+color:white;
+border-radius:25px;
+cursor:pointer;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:15px;
+margin:10px;
+border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>RUSHLY</h2>
+<nav>
+<a href="project.html">Project</a>
+<a href="practical.html">Practical</a>
+<a href="scrapbook.html">Scrapbook</a>
+<a href="admin.html">Admin</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>FAST & FLAWLESS STUDENT WORK</h1>
+<p>Projects • Files • Scrapbooks</p>
+<button class="btn" onclick="location.href='project.html'">Order Now</button>
+</div>
+
+<div style="text-align:center;">
+<div class="card">✔ On Time Delivery</div>
+<div class="card">✔ High Quality Work</div>
+<div class="card">✔ Student Friendly</div>
+</div>
+
+</body>
+</html>
